@@ -1,0 +1,56 @@
+.ourServices {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    justify-content: center;
+  }
+  
+  .ourServices h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#ff9900;
+  }
+  
+  .ourServices span {
+    color:#ff9900; /* Accent color */
+  }
+  
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .service {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service i {
+    font-size: 3rem;
+    color: #ff9900;
+    margin-bottom: 1rem;
+  }
+  
+  .service h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .service span {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  

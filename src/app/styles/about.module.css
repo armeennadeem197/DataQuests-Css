@@ -1,0 +1,185 @@
+/* about.module.css */
+
+/* Main container for the About section */
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  /* About Us Section Styling */
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .about1 {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .mainImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  
+  .contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .content h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Second section - Testimonial */
+  .about2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .quoteImage {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial {
+    position: relative;
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .testimonial i {
+    font-size: 2.5rem;
+    color: #ff9900; /* Quote icon color */
+    position: absolute;
+    top: -15px;
+    left: 0;
+  }
+  
+  .testimonial blockquote {
+    font-style: italic;
+    margin: 10px 0;
+    padding-left: 40px;
+    border-left: 5px solid #ff9900; /* Border for emphasis */
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .profileImage {
+    border-radius: 50%;
+  }
+  
+  .profileContent h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .profileContent span {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .contents {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .aboutUs {
+      gap: 30px;
+    }
+  
+    .about1 {
+      text-align: center;
+    }
+  
+    .content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .content p {
+      font-size: 0.9rem;
+    }
+  
+    .quoteImage {
+      max-width: 100%;
+    }
+  
+    .testimonial blockquote {
+      font-size: 1rem;
+    }
+  
+    .profile {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profileImage {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .content h3 {
+      font-size: 1.25rem;
+    }
+  
+    .content p {
+      font-size: 0.85rem;
+    }
+  
+    .testimonial {
+      font-size: 1rem;
+    }
+  
+    .profileContent h4 {
+      font-size: 1rem;
+    }
+  
+    .profileContent span {
+      font-size: 0.875rem;
+    }
+  }
+  
+  

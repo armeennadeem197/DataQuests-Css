@@ -1,0 +1,111 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly; /* Distribute space between the logo and the menu */
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+  }
+  
+  /* Branding (Logo) */
+  .name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .name span {
+    color: #ff9900; /* Highlight brand color */
+  }
+  
+  /* Desktop Navigation */
+  .navigation {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  .navigation li {
+    margin: 0 20px;
+  }
+  
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navigation a:hover {
+    color: #ff9900;
+  }
+  
+  /* Hamburger Icon for Mobile */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* Side Menu */
+  .sideMenu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease;
+  }
+  
+  .sideMenu.active {
+    left: 0;
+  }
+  
+  .sideMenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sideMenu li {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sideMenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .sideMenu a:hover {
+    color: #ff9900;
+  }
+  
+  /* Close Button (X) */
+  .cut {
+    font-size: 2rem;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    text-align: right;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    .navigation {
+      display: none; /* Hide desktop navigation on small screens */
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger icon on small screens */
+    }
+  
+    .sideMenu {
+      display: block;
+    }
+  }
+  
